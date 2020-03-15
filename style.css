@@ -9,10 +9,12 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 .section-container {
   padding: 0 100px 0 100px;
+  max-width: 100%;
 }
 
 .main-info-section,
@@ -34,6 +36,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  max-width: 100%;
   overflow-x: hidden !important;
 }
 
