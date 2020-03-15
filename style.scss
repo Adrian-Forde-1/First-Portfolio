@@ -25,12 +25,12 @@ html {
 
 body {
   background-color: #252627;
-  // background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-  //   url("img/coding\ picture.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("img/coding\ picture.jpg") no-repeat;
 
-  // background-position: center;
-  // background-attachment: fixed;
-  // background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 
   overflow-x: hidden !important;
 
