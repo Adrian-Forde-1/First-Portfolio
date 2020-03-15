@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .section-container {
@@ -27,13 +28,8 @@ html {
 }
 
 body {
-  max-width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("img/coding picture.jpg") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("img/coding picture.jpg") no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow-x: hidden;
+  background-color: #252627;
+  overflow-x: hidden !important;
 }
 
 body::-webkit-scrollbar {
@@ -103,13 +99,10 @@ header {
 
 .hamburger-menu {
   position: absolute;
-  top: 2rem;
   right: 0.75rem;
   height: 5rem;
   width: 5rem;
   background-color: none;
-  -webkit-box-shadow: 0.5rem 0.5rem 1rem black;
-          box-shadow: 0.5rem 0.5rem 1rem black;
   cursor: pointer;
   display: none;
   z-index: 2000;
@@ -648,6 +641,18 @@ footer p {
   .animated-modal {
     min-width: 90% !important;
   }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -661,6 +666,12 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navigation {
     -webkit-box-orient: vertical;

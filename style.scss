@@ -9,6 +9,7 @@ $main-color-pink: #ed5565;
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .section-container {
@@ -23,16 +24,15 @@ html {
 }
 
 body {
-  max-width: 100%;
-  // background-color: #252627;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("img/coding\ picture.jpg") no-repeat;
+  background-color: #252627;
+  // background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  //   url("img/coding\ picture.jpg") no-repeat;
 
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+  // background-size: contain;
 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
   &::-webkit-scrollbar {
     width: 0.25rem;
@@ -90,12 +90,10 @@ header {
 
 .hamburger-menu {
   position: absolute;
-  top: 2rem;
   right: 0.75rem;
   height: 5rem;
   width: 5rem;
   background-color: none;
-  box-shadow: 0.5rem 0.5rem 1rem black;
   cursor: pointer;
   display: none;
   z-index: 2000;
@@ -599,6 +597,12 @@ footer {
   .animated-modal {
     min-width: 90% !important;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -614,6 +618,8 @@ footer {
 @media only screen and (max-width: 992px) {
   .hamburger-menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .navigation {
