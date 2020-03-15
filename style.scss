@@ -578,6 +578,12 @@ footer {
   }
 }
 @media only screen and (max-width: 600px) {
+  .contact h1,
+  .projects h1,
+  .skills h1 {
+    font-size: 5rem;
+  }
+
   .cat-btn {
     margin-bottom: 0px;
   }
