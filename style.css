@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 html {
@@ -41,7 +41,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -127,7 +127,7 @@ header {
 }
 
 .bar::before, .bar::after {
-  content: "";
+  content: '';
   position: absolute;
   width: inherit;
   height: inherit;
@@ -182,7 +182,7 @@ a {
 }
 
 .main-info-section {
-  font-family: "Varela Round", sans-serif !important;
+  font-family: 'Varela Round', sans-serif !important;
   height: calc(100vh - 81.6px);
 }
 
@@ -229,7 +229,7 @@ a {
 }
 
 .text a::before {
-  content: "";
+  content: '';
   background-color: #ed5565;
   position: absolute;
   left: 0;
@@ -460,7 +460,7 @@ span:hover {
   background-color: #ed5565;
 }
 
-div[class^="category-"] {
+div[class^='category-'] {
   margin-top: 50px;
   display: -ms-grid;
   display: grid;

@@ -4,7 +4,7 @@ $main-color-pink: #ed5565;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 html {
@@ -28,7 +28,7 @@ html {
 body {
   background-color: #252627;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("img/coding\ picture.jpg") no-repeat;
+    url('img/coding\ picture.jpg') no-repeat;
 
   background-position: center;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ body {
   overflow-x: hidden !important;
 
   &::-webkit-scrollbar {
-    width: 0.25rem;
+    width: 0.5rem;
   }
 
   &::-webkit-scrollbar-track {
@@ -112,7 +112,7 @@ header {
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: inherit;
     height: inherit;
@@ -166,7 +166,7 @@ a {
 }
 
 .main-info-section {
-  font-family: "Varela Round", sans-serif !important;
+  font-family: 'Varela Round', sans-serif !important;
   height: calc(100vh - 81.6px);
 }
 
@@ -210,7 +210,7 @@ a {
     }
 
     &::before {
-      content: "";
+      content: '';
       background-color: $main-color-pink;
       position: absolute;
       left: 0;
@@ -427,7 +427,7 @@ span {
   }
 }
 
-div[class^="category-"] {
+div[class^='category-'] {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
