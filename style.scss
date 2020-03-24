@@ -366,6 +366,10 @@ span {
   }
 
   &:hover {
+    .skill-name {
+      visibility: visible;
+      opacity: 1;
+    }
     i .fab,
     .fa-react {
       color: #61dbfb;
@@ -400,6 +404,36 @@ span {
     .fa-database {
       color: grey;
     }
+  }
+}
+
+.skill-name {
+  display: block;
+  margin: 5px auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: 500ms ease;
+
+  &.databse {
+    color: grey;
+  }
+  &.node {
+    color: #3c873a;
+  }
+  &.react {
+    color: #61dbfb;
+  }
+  &.javascript {
+    color: #f0db4f;
+  }
+  &.html5 {
+    color: #f16529;
+  }
+  &.sass {
+    color: #c69;
+  }
+  &.git {
+    color: #f1502f;
   }
 }
 
@@ -507,7 +541,7 @@ form {
 
 footer {
   hr {
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     margin-top: 80px;
   }
 
@@ -597,6 +631,11 @@ footer {
     padding: 0px 20px 0 20px;
   }
 
+  .skill-name {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .animated-modal {
     min-width: 90% !important;
   }
@@ -605,6 +644,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .project-category button {
+    padding: 10px 20px;
+    margin: 0px 5px;
   }
 }
 

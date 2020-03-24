@@ -400,6 +400,11 @@ span:hover {
   transition: 500ms ease;
 }
 
+.skill-info:hover .skill-name {
+  visibility: visible;
+  opacity: 1;
+}
+
 .skill-info:hover i .fab,
 .skill-info:hover .fa-react {
   color: #61dbfb;
@@ -433,6 +438,43 @@ span:hover {
 .skill-info:hover i .fas,
 .skill-info:hover .fa-database {
   color: grey;
+}
+
+.skill-name {
+  display: block;
+  margin: 5px auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.skill-name.databse {
+  color: grey;
+}
+
+.skill-name.node {
+  color: #3c873a;
+}
+
+.skill-name.react {
+  color: #61dbfb;
+}
+
+.skill-name.javascript {
+  color: #f0db4f;
+}
+
+.skill-name.html5 {
+  color: #f16529;
+}
+
+.skill-name.sass {
+  color: #c69;
+}
+
+.skill-name.git {
+  color: #f1502f;
 }
 
 .project-category button {
@@ -545,7 +587,7 @@ form {
 }
 
 footer hr {
-  border: 2px solid #707070;
+  border: 1px solid #707070;
   margin-top: 80px;
 }
 
@@ -646,6 +688,10 @@ footer p {
   .section-container {
     padding: 0px 20px 0 20px;
   }
+  .skill-name {
+    visibility: visible;
+    opacity: 1;
+  }
   .animated-modal {
     min-width: 90% !important;
   }
@@ -660,6 +706,10 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .project-category button {
+    padding: 10px 20px;
+    margin: 0px 5px;
   }
 }
 
