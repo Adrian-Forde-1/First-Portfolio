@@ -800,7 +800,6 @@ footer {
     display: none;
     position: absolute;
     top: 60px;
-    left: 15px;
     ul {
       width: 100%;
       flex-direction: column;
@@ -809,10 +808,10 @@ footer {
 
     li {
       display: block;
-      width: 100%;
       text-align: center;
       margin: 10px auto;
-
+      position: relative;
+      left: 15px;
       a {
         padding: 0.5rem 1rem;
       }

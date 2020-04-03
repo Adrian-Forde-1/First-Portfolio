@@ -901,7 +901,6 @@ footer p {
     display: none;
     position: absolute;
     top: 60px;
-    left: 15px;
   }
   .navbar-links ul {
     width: 100%;
@@ -915,9 +914,10 @@ footer p {
   }
   .navbar-links li {
     display: block;
-    width: 100%;
     text-align: center;
     margin: 10px auto;
+    position: relative;
+    left: 15px;
   }
   .navbar-links li a {
     padding: 0.5rem 1rem;
