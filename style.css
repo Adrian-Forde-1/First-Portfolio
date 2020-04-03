@@ -325,17 +325,90 @@ span:hover {
 
 .projects {
   margin-top: 50px;
-  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: auto;
 }
 
 .projects h1 {
   font-size: 7rem;
   z-index: 0;
   opacity: 0.4;
+  text-align: center;
 }
 
-.projects h1 {
+.projects h4 {
   text-align: center;
+  font-weight: lighter;
+  color: #ed5565;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.individual-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.individual-project:nth-of-type(even) div:nth-of-type(1) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.individual-project div {
+  height: 100%;
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 10px 0px;
+}
+
+.individual-project div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.individual-project-btn {
+  display: block;
+  margin: 10px auto;
+  background: none;
+  outline: none;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid #ed5565;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.individual-project-btn:hover {
+  background-color: #ed5565;
+}
+
+.project-infomation {
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-me-info {
@@ -379,9 +452,14 @@ span:hover {
   opacity: 0.4;
 }
 
+div[class*='col'] {
+  grid-auto-rows: 1fr !important;
+  padding: 10px 10px;
+}
+
 .skill-info {
-  height: 250px;
-  margin: 10px 0px;
+  min-height: 100%;
+  max-height: auto;
   font-size: 1.4rem;
   color: #bebebe;
   padding: 10px 10px;
@@ -720,7 +798,8 @@ footer p {
 
 .modal-info-section {
   height: auto;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
   padding: 20px 20px;
 }
 
@@ -737,6 +816,8 @@ footer p {
   color: skyblue;
   text-shadow: 0 0 0 10px 20px;
   cursor: pointer;
+  -webkit-transition: all 0ms !important;
+  transition: all 0ms !important;
 }
 
 @media only screen and (max-width: 350px) {
@@ -779,6 +860,9 @@ footer p {
     padding: 10px 20px;
     margin: 0px 5px;
   }
+  .individual-project div {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -817,7 +901,7 @@ footer p {
     display: none;
     position: absolute;
     top: 60px;
-    left: 0px;
+    left: 15px;
   }
   .navbar-links ul {
     width: 100%;
@@ -825,10 +909,15 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navbar-links li {
+    display: block;
+    width: 100%;
     text-align: center;
-    margin: 10px 0px;
+    margin: 10px auto;
   }
   .navbar-links li a {
     padding: 0.5rem 1rem;
@@ -908,6 +997,20 @@ footer p {
   }
   .projects {
     height: auto !important;
+  }
+  .individual-project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .individual-project div {
+    width: 100%;
+  }
+  .individual-project:nth-of-type(even) div:nth-of-type(1) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
   .animated-modal {
     min-width: 70%;

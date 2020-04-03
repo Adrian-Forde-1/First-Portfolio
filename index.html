@@ -105,14 +105,14 @@
     <div class="section-container skills" id="skills">
       <h1>Skills</h1>
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500">
           <div class="skill-info">
             <i class="fas fa-database"></i>
             <span class='skill-name databse'>Database</span>
             <p>MongoDB is the document database that i'm currently most familiar with. The fact that its a No-SQL database and stores data in JSON format captured my interest</p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500" data-aos-delay="150">
           <div class="skill-info">
             <i class="fab fa-node"></i>
             <span class='skill-name node'>Node Js</span>
@@ -121,7 +121,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500" data-aos-delay="300">
           <div class="skill-info">
             <i class="fab fa-react"></i>
             <span class='skill-name react'>React Js</span>
@@ -130,7 +130,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="450">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500" data-aos-delay="450">
           <div class="skill-info">
             <i class="fab fa-js"></i>
             <span class='skill-name javascript'>Javascript</span>
@@ -139,7 +139,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="600">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500" data-aos-delay="600">
           <div class="skill-info">
             <i class="fab fa-html5"></i>
             <span class='skill-name html5'>HTML5</span>
@@ -148,7 +148,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="750">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500" data-aos-delay="750">
           <div class="skill-info">
             <i class="fab fa-sass"></i>
             <span class='skill-name sass'>SASS / CSS</span>
@@ -157,7 +157,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="900">
+        <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-offect='150' data-aos-duration="500" data-aos-delay="900">
           <div class="skill-info">
             <i class="fab fa-git-alt"></i>
             <span class='skill-name git'>Git</span>
@@ -171,7 +171,38 @@
 
     <div class="section-container projects" id="projects">
       <h1>Projects</h1>
-      <div class="project-category">
+      <h4>Front End</h4>
+      <div class="individual-project" data-aos="fade-in" data-aos-duration="500" data-aos-delay="">
+        <div class="project-img-container">
+          <img src="img/Clothing Website Picture.PNG" alt=""
+        />
+        </div>
+          <div class="project-infomation">
+            This webiste was a great learning experience for me. Using the React framework / library with Javascript and bootstrap, I was able to create a responsive...
+            <button class="individual-project-btn" id="clothing-website-btn" onclick="openModal(this)">More Info</button>
+          </div>
+      </div>
+      <div class="individual-project" data-aos="fade-in" data-aos-duration="500" data-aos-delay="150">
+        <div class="project-img-container">
+          <img src="img/Restaurant Website Picture.PNG" alt=""
+        />
+        </div>
+          <div class="project-infomation">
+            Attempting to create a webiste, tutorial free and completely on my own. Through many stuggles and learning experiences, this website, Exquis: Cuisine like you've never tasted before, was born
+            <button class="individual-project-btn" id="restaurant-website-btn" onclick="openModal(this)">More Info</button>
+          </div>
+      </div>
+      <div class="individual-project" data-aos="fade-in" data-aos-duration="500" data-aos-delay="300">
+        <div class="project-img-container">
+          <img src="img/Sorting Algorithm Visualizer Picture.PNG" alt=""
+          />
+        </div>
+          <div class="project-infomation">
+            By following a youtube tutorial by Clement Mihailescu, I was able to built the foundation for this single page application and then using the concepts I learnt, expanded...
+            <button class="individual-project-btn" id="sorting-algo-btn" onclick="openModal(this)">More Info</button>
+          </div>
+      </div>
+      <!-- <div class="project-category">
         <button id="front-end" class="active cat-btn" onclick="showRequiredCategory(this)">Front End</buttton>
         <button id="full-stack" onclick="showRequiredCategory(this)">Full Stack</buttton>
       </div>
@@ -185,7 +216,7 @@
       </div>
       <div class="category-full-stack showCategory">
         <button class="modal-btn" style="background: none; color: white;">Work In Progress...</button>
-      </div>
+      </div> -->
     </div>
 
     <div class="container contact px-sm-5 d-block" id="contact">
@@ -224,8 +255,8 @@
             <h4 class="modal-name"></h4>
             <p class="information"></p>
             <div class="modal-links w-100 d-flex justify-content-around">
-            <a href="" class="modal-link-live btn btn-sm btn-info">Live Website</a>
-            <a href="" class="modal-link-github btn btn-sm btn-warning">Github Repo</a>
+            <a href="" target="_blank" class="modal-link-live btn btn-sm btn-info">Live Website</a>
+            <a href="" target="_blank" class="modal-link-github btn btn-sm btn-warning">Github Repo</a>
           </div>
           </div>
           <span class="modal-close"><i class="fas fa-times"></i></span>

@@ -1,64 +1,51 @@
 AOS.init();
 
-const spans = document.querySelectorAll('h1 span');
-spans.forEach(span =>
-  span.addEventListener('mouseover', e => {
-    span.classList.add('animated', 'rubberBand');
-  })
-);
-
-spans.forEach(span =>
-  span.addEventListener('mouseout', e => {
-    span.classList.remove('animated', 'rubberBand');
-  })
-);
-
 // const controller = new ScrollMagic.controller();
 // const scene = new ScrollMagic.Scene({
 //     triggerElement: '.skills',
 //     triggerHook: 0
 // }).setTween
 
-const showRequiredCategory = event => {
-  const getId = event.id;
-  const links = document.querySelectorAll('.project-category button');
-  for (let i = 0; i < links.length; i++) {
-    if (links[i].hasAttribute('class')) {
-      links[i].classList.remove('active');
-    }
-  }
-  event.classList.add('active');
+// const showRequiredCategory = event => {
+//   const getId = event.id;
+//   const links = document.querySelectorAll('.project-category button');
+//   for (let i = 0; i < links.length; i++) {
+//     if (links[i].hasAttribute('class')) {
+//       links[i].classList.remove('active');
+//     }
+//   }
+//   event.classList.add('active');
 
-  const getCategory = document.querySelector(`.category-${getId}`);
-  const categories = document.querySelectorAll('div[class^="category-"]');
-  for (let i = 0; i < categories.length; i++) {
-    if (categories[i].hasAttribute('class')) {
-      categories[i].classList.remove('showCategory');
-      categories[i].classList.add('hideCategory');
-    }
-  }
+//   const getCategory = document.querySelector(`.category-${getId}`);
+//   const categories = document.querySelectorAll('div[class^="category-"]');
+//   for (let i = 0; i < categories.length; i++) {
+//     if (categories[i].hasAttribute('class')) {
+//       categories[i].classList.remove('showCategory');
+//       categories[i].classList.add('hideCategory');
+//     }
+//   }
 
-  getCategory.classList.remove('hideCategory');
-  getCategory.classList.add('showCategory');
-};
+//   getCategory.classList.remove('hideCategory');
+//   getCategory.classList.add('showCategory');
+// };
 
-const getInitialCategory = () => {
-  const buttons = document.querySelectorAll('.project-category button');
-  buttons.forEach(button => {
-    if (button.classList.contains('active')) {
-      const categories = document.querySelectorAll('div[class^="category-"]');
-      categories.forEach(category => {
-        if (category.classList.contains(`category-${button.id}`)) {
-          category.classList.add('showCategory');
-          category.classList.remove('hideCategory');
-        } else {
-          category.classList.remove('showCategory');
-          category.classList.add('hideCategory');
-        }
-      });
-    }
-  });
-};
+// const getInitialCategory = () => {
+//   const buttons = document.querySelectorAll('.project-category button');
+//   buttons.forEach(button => {
+//     if (button.classList.contains('active')) {
+//       const categories = document.querySelectorAll('div[class^="category-"]');
+//       categories.forEach(category => {
+//         if (category.classList.contains(`category-${button.id}`)) {
+//           category.classList.add('showCategory');
+//           category.classList.remove('hideCategory');
+//         } else {
+//           category.classList.remove('showCategory');
+//           category.classList.add('hideCategory');
+//         }
+//       });
+//     }
+//   });
+// };
 
 const clothingWebsiteInfo = {
   name: 'Appear: Clothing Website',
@@ -82,7 +69,7 @@ const SortingAlgoWebsiteInfo = {
   name: 'Sorthing Algorithm Visualizer',
   img: 'img/Sorting Algorithm Visualizer Picture.PNG',
   information:
-    'By following a youtube tutorial by Clement Mihailescu, I was able to built the foundation for this single page application and then using the concepts I learnt, I was able to expand upon what was taught to then transform the website into a sleak, feature packed, ease to use, sorthing algorithm visualizer',
+    'By following a youtube tutorial by Clement Mihailescu, I was able to built the foundation for this single page application and then using the concepts I learnt, I expanded upon what was taught to then transform the website into a sleak, feature packed, ease to use, sorthing algorithm visualizer',
   liveLink: 'https://dawnofhopee.github.io/Sorting-Algorithm-Visualizer/',
   githubLink: 'https://github.com/DawnOfHopee/Sorting-Algorithm-Visualizer'
 };
@@ -123,7 +110,7 @@ const openModal = event => {
   document.querySelector('.modal-bg').classList.add('active-modal');
 };
 
-window.onload = getInitialCategory;
+// window.onload = getInitialCategory;
 
 const navbarLinks = document.querySelector('.navbar-links');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -166,4 +153,4 @@ setInterval(() => {
       }, 400);
     }, 100 * index);
   });
-}, spans.length * 100);
+}, headerSpans.length * 100);
