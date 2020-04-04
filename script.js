@@ -51,7 +51,7 @@ const clothingWebsiteInfo = {
   name: 'Appear: Clothing Website',
   img: 'img/Clothing Website Picture.PNG',
   information:
-    'This webiste was a great learning experience for me. Using the React framework / library with Javascript and bootstrap, I was able to create a responsive and interactive clothing website with advance features such as sorting, filtering and real time cart calculations',
+    'This webiste was a great learning experience for me. Using the React framework / library with Javascript and bootstrap, I was able to create a responsive and interactive clothing website with advance features such as sorting, filtering and real time cart calculations. I was also able to implement a carousel when hovering over item previews.',
   liveLink: 'https://dawnofhopee.github.io/Clothing-Website/#/',
   githubLink: 'https://github.com/DawnOfHopee/Clothing-Website'
 };
