@@ -444,6 +444,10 @@ span:hover {
   height: auto;
 }
 
+.skills h1 {
+  margin-bottom: 40px;
+}
+
 .skills p,
 .skills i {
   color: white;
@@ -652,6 +656,10 @@ div.hideCategory {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+}
+
+.contact h1 {
+  margin-bottom: 40px;
 }
 
 .contact p {

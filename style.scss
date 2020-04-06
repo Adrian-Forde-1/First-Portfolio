@@ -391,6 +391,10 @@ span {
 
 .skills {
   height: auto;
+
+  h1 {
+    margin-bottom: 40px;
+  }
   p,
   i {
     color: white;
@@ -576,6 +580,10 @@ div.hideCategory {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+
+  h1 {
+    margin-bottom: 40px;
+  }
 
   p {
     margin-top: 20px;
