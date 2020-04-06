@@ -157,6 +157,10 @@ header {
   color: #ed5565;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: 0 auto;
 }
 
 .about h1:hover,
