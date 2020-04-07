@@ -542,9 +542,13 @@ div[class*='col'] {
   color: #f16529;
 }
 
-.skill-info i .fas,
-.skill-info .fa-database {
-  color: grey;
+.skill-info i .fab,
+.skill-info .fa-bootstrap {
+  color: #563d73;
+}
+
+.skill-info .mongodb_logo {
+  width: 6rem;
 }
 
 .skill-info img {
@@ -567,8 +571,12 @@ div[class*='col'] {
   transition: 500ms ease;
 }
 
-.skill-name.databse {
-  color: grey;
+.skill-name.mongoDB {
+  color: #4db33d;
+}
+
+.skill-name.bootstrap {
+  color: #563d73;
 }
 
 .skill-name.node {

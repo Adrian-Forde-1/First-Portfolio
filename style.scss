@@ -480,9 +480,17 @@ div[class*='col'] {
     color: #f16529;
   }
 
-  i .fas,
-  .fa-database {
-    color: grey;
+  // i .fas,
+  // .fa-database {
+  //   color: grey;
+  // }
+  i .fab,
+  .fa-bootstrap {
+    color: #563d73;
+  }
+
+  .mongodb_logo {
+    width: 6rem;
   }
 
   img {
@@ -506,8 +514,11 @@ div[class*='col'] {
   opacity: 0;
   transition: 500ms ease;
 
-  &.databse {
-    color: grey;
+  &.mongoDB {
+    color: #4db33d;
+  }
+  &.bootstrap {
+    color: #563d73;
   }
   &.node {
     color: #3c873a;
