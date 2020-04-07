@@ -357,6 +357,10 @@ span:hover {
           align-items: center;
 }
 
+.individual-project:nth-of-type(1) {
+  margin-bottom: 50px;
+}
+
 .individual-project:nth-of-type(even) div:nth-of-type(1) {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -508,44 +512,50 @@ div[class*='col'] {
   transition: 500ms ease;
 }
 
-.skill-info:hover .skill-name {
-  visibility: visible;
-  opacity: 1;
-}
-
-.skill-info:hover i .fab,
-.skill-info:hover .fa-react {
+.skill-info i .fab,
+.skill-info .fa-react {
   color: #61dbfb;
 }
 
-.skill-info:hover i .fab,
-.skill-info:hover .fa-js {
+.skill-info i .fab,
+.skill-info .fa-js {
   color: #f0db4f;
 }
 
-.skill-info:hover i .fab,
-.skill-info:hover .fa-node {
+.skill-info i .fab,
+.skill-info .fa-node {
   color: #3c873a;
 }
 
-.skill-info:hover i .fab,
-.skill-info:hover .fa-sass {
+.skill-info i .fab,
+.skill-info .fa-sass {
   color: #c69;
 }
 
-.skill-info:hover i .fab,
-.skill-info:hover .fa-git-alt {
+.skill-info i .fab,
+.skill-info .fa-git-alt {
   color: #f1502f;
 }
 
-.skill-info:hover i .fab,
-.skill-info:hover .fa-html5 {
+.skill-info i .fab,
+.skill-info .fa-html5 {
   color: #f16529;
 }
 
-.skill-info:hover i .fas,
-.skill-info:hover .fa-database {
+.skill-info i .fas,
+.skill-info .fa-database {
   color: grey;
+}
+
+.skill-info img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 4rem;
+}
+
+.skill-info:hover .skill-name {
+  visibility: visible;
+  opacity: 1;
 }
 
 .skill-name {
@@ -583,6 +593,10 @@ div[class*='col'] {
 
 .skill-name.git {
   color: #f1502f;
+}
+
+.skill-name.redux {
+  color: #764abc;
 }
 
 .project-category button {
@@ -809,10 +823,26 @@ footer p {
 }
 
 .modal-info-section {
-  height: auto;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 20px 20px;
+}
+
+.modal-information {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.modal-information::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.modal-information::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+.modal-information::-webkit-scrollbar-thumb {
+  background: #ed5565;
 }
 
 .modal-img {
@@ -830,6 +860,21 @@ footer p {
   cursor: pointer;
   -webkit-transition: all 0ms !important;
   transition: all 0ms !important;
+}
+
+.modal-warning {
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-weight: lighter;
+  font-size: 12px;
+  display: inline-block;
+  margin: 0px;
+  padding-top: 0px;
+}
+
+.modal-warning:hover {
+  color: red;
 }
 
 @media only screen and (max-width: 350px) {

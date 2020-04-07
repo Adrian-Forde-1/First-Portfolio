@@ -47,13 +47,23 @@ AOS.init();
 //   });
 // };
 
+const cellphoneRepairWebsiteInfo = {
+  name: 'Cellphone Repair',
+  img: 'img/Cellphone Repair Website Picture.PNG',
+  information:
+    'Into new but familiar territory is what I felt like when developing this website. Being the second full stack website I ever built, I was able to take my knowledge of front end and combine it with my backend skills that included Node Js, Express Js and MongoDB to create this amazing cellphone repair website, with both client and admin functionality. <br> Accounts are: <br> Client: maxjow@email.com password: maxjoe <br> Client: mikedowell@email.com password: dowell <br> Client: new@email.com password: qqqqqq <br> Admin: admin@email.com password: adminuser <br> Admin: moderator@email.com password: moderator',
+  liveLink: 'https://afcellphonerepair.herokuapp.com/',
+  warning:
+    'This website is being hosted on heroku so it may take a few seconds to load up. Sorry in advance.',
+};
+
 const clothingWebsiteInfo = {
   name: 'Appear: Clothing Website',
   img: 'img/Clothing Website Picture.PNG',
   information:
     'This webiste was a great learning experience for me. Using the React framework / library with Javascript and bootstrap, I was able to create a responsive and interactive clothing website with advance features such as sorting, filtering and real time cart calculations. I was also able to implement a carousel when hovering over item previews.',
   liveLink: 'https://dawnofhopee.github.io/Clothing-Website/#/',
-  githubLink: 'https://github.com/DawnOfHopee/Clothing-Website'
+  githubLink: 'https://github.com/DawnOfHopee/Clothing-Website',
 };
 
 const RestaurantWebsiteInfo = {
@@ -62,7 +72,7 @@ const RestaurantWebsiteInfo = {
   information:
     "Attempting to create a webiste, tutorial free and completely on my own. Through many stuggles and learning experiences, this website, Exquis: Cuisine like you've never tasted before, was born",
   liveLink: 'https://dawnofhopee.github.io/Restaurant-Website/#/',
-  githubLink: 'https://github.com/DawnOfHopee/Restaurant-Website'
+  githubLink: 'https://github.com/DawnOfHopee/Restaurant-Website',
 };
 
 const SortingAlgoWebsiteInfo = {
@@ -71,40 +81,79 @@ const SortingAlgoWebsiteInfo = {
   information:
     'By following a youtube tutorial by Clement Mihailescu, I was able to built the foundation for this single page application and then using the concepts I learnt, I expanded upon what was taught to then transform the website into a sleak, feature packed, ease to use, sorthing algorithm visualizer',
   liveLink: 'https://dawnofhopee.github.io/Sorting-Algorithm-Visualizer/',
-  githubLink: 'https://github.com/DawnOfHopee/Sorting-Algorithm-Visualizer'
+  githubLink: 'https://github.com/DawnOfHopee/Sorting-Algorithm-Visualizer',
 };
 
 document.querySelector('.modal-close').addEventListener('click', () => {
+  document.querySelector('.modal-link-github').style.display = 'block';
+  document.querySelector('.modal-warning').style.display = 'block';
   document.querySelector('.modal-bg').classList.remove('active-modal');
 });
 
-const openModal = event => {
+const openModal = (event) => {
   const modalImg = document.querySelector('.modal-img');
   const modalName = document.querySelector('.modal-name');
-  const modalInfo = document.querySelector('.information');
+  const modalInfo = document.querySelector('.modal-information');
   const modalLinkLive = document.querySelector('.modal-link-live');
   const modalLinkGithub = document.querySelector('.modal-link-github');
+  const modalWarning = document.querySelector('.modal-warning');
 
   if (event.id === 'clothing-website-btn') {
     modalImg.src = clothingWebsiteInfo.img;
     modalName.innerHTML = clothingWebsiteInfo.name;
     modalInfo.innerHTML = clothingWebsiteInfo.information;
     modalLinkLive.href = clothingWebsiteInfo.liveLink;
-    modalLinkGithub.href = clothingWebsiteInfo.githubLink;
+
+    if (clothingWebsiteInfo['githubLink'])
+      modalLinkGithub.href = clothingWebsiteInfo.githubLink;
+    else modalLinkGithub.style.display = 'none';
+
+    if (clothingWebsiteInfo['warning'])
+      modalWarning.innerHTML = clothingWebsiteInfo.warning;
+    else modalWarning.style.display = 'none';
   }
   if (event.id === 'restaurant-website-btn') {
     modalImg.src = RestaurantWebsiteInfo.img;
     modalName.innerHTML = RestaurantWebsiteInfo.name;
     modalInfo.innerHTML = RestaurantWebsiteInfo.information;
     modalLinkLive.href = RestaurantWebsiteInfo.liveLink;
-    modalLinkGithub.href = RestaurantWebsiteInfo.githubLink;
+
+    if (RestaurantWebsiteInfo['githubLink'])
+      modalLinkGithub.href = RestaurantWebsiteInfo.githubLink;
+    else modalLinkGithub.style.display = 'none';
+
+    if (RestaurantWebsiteInfo['warning'])
+      modalWarning.innerHTML = RestaurantWebsiteInfo.warning;
+    else modalWarning.style.display = 'none';
   }
   if (event.id === 'sorting-algo-btn') {
     modalImg.src = SortingAlgoWebsiteInfo.img;
     modalName.innerHTML = SortingAlgoWebsiteInfo.name;
     modalInfo.innerHTML = SortingAlgoWebsiteInfo.information;
     modalLinkLive.href = SortingAlgoWebsiteInfo.liveLink;
-    modalLinkGithub.href = SortingAlgoWebsiteInfo.githubLink;
+
+    if (SortingAlgoWebsiteInfo['githubLink'])
+      modalLinkGithub.href = SortingAlgoWebsiteInfo.githubLink;
+    else modalLinkGithub.style.display = 'none';
+
+    if (SortingAlgoWebsiteInfo['warning'])
+      modalWarning.innerHTML = SortingAlgoWebsiteInfo.warning;
+    else modalWarning.style.display = 'none';
+  }
+
+  if (event.id === 'cellphone-repair-btn') {
+    modalImg.src = cellphoneRepairWebsiteInfo.img;
+    modalName.innerHTML = cellphoneRepairWebsiteInfo.name;
+    modalInfo.innerHTML = cellphoneRepairWebsiteInfo.information;
+    modalLinkLive.href = cellphoneRepairWebsiteInfo.liveLink;
+
+    if (cellphoneRepairWebsiteInfo['githubLink'])
+      modalLinkGithub.href = cellphoneRepairWebsiteInfo.githubLink;
+    else modalLinkGithub.style.display = 'none';
+
+    if (cellphoneRepairWebsiteInfo['warning'])
+      modalWarning.innerHTML = cellphoneRepairWebsiteInfo.warning;
+    else modalWarning.style.display = 'none';
   }
 
   document.querySelector('.modal-bg').classList.add('active-modal');

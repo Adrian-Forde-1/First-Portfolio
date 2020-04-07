@@ -317,6 +317,10 @@ span {
   display: flex;
   align-items: center;
 
+  &:nth-of-type(1) {
+    margin-bottom: 50px;
+  }
+
   &:nth-of-type(even) {
     div {
       &:nth-of-type(1) {
@@ -446,44 +450,51 @@ div[class*='col'] {
     transition: 500ms ease;
   }
 
+  i .fab,
+  .fa-react {
+    color: #61dbfb;
+  }
+
+  i .fab,
+  .fa-js {
+    color: #f0db4f;
+  }
+
+  i .fab,
+  .fa-node {
+    color: #3c873a;
+  }
+
+  i .fab,
+  .fa-sass {
+    color: #c69;
+  }
+
+  i .fab,
+  .fa-git-alt {
+    color: #f1502f;
+  }
+
+  i .fab,
+  .fa-html5 {
+    color: #f16529;
+  }
+
+  i .fas,
+  .fa-database {
+    color: grey;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 4rem;
+  }
+
   &:hover {
     .skill-name {
       visibility: visible;
       opacity: 1;
-    }
-    i .fab,
-    .fa-react {
-      color: #61dbfb;
-    }
-
-    i .fab,
-    .fa-js {
-      color: #f0db4f;
-    }
-
-    i .fab,
-    .fa-node {
-      color: #3c873a;
-    }
-
-    i .fab,
-    .fa-sass {
-      color: #c69;
-    }
-
-    i .fab,
-    .fa-git-alt {
-      color: #f1502f;
-    }
-
-    i .fab,
-    .fa-html5 {
-      color: #f16529;
-    }
-
-    i .fas,
-    .fa-database {
-      color: grey;
     }
   }
 }
@@ -515,6 +526,9 @@ div[class*='col'] {
   }
   &.git {
     color: #f1502f;
+  }
+  &.redux {
+    color: #764abc;
   }
 }
 
@@ -710,10 +724,26 @@ footer {
 }
 
 .modal-info-section {
-  height: auto;
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 1);
   padding: 20px 20px;
+}
+
+.modal-information {
+  height: 200px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: inherit;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $main-color-pink;
+  }
 }
 
 .modal-img {
@@ -731,6 +761,20 @@ footer {
   transition: all 0ms !important;
 }
 
+.modal-warning {
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-weight: lighter;
+  font-size: 12px;
+  display: inline-block;
+  margin: 0px;
+  padding-top: 0px;
+
+  &:hover {
+    color: red;
+  }
+}
 // MEDIA QUERIES
 
 @media only screen and (max-width: 350px) {
