@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  padding: 0px 5%;
   background-color: #252627;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url("img/coding picture.jpg") no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("img/coding picture.jpg") no-repeat;
@@ -343,7 +344,7 @@ span:hover {
 .projects h4 {
   text-align: center;
   font-weight: lighter;
-  color: #ed5565;
+  color: #48cfad;
   font-size: 2.5rem;
   margin-bottom: 50px;
 }
@@ -373,7 +374,7 @@ span:hover {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 10px 0px;
+  margin: 25px 10px;
 }
 
 .individual-project div img {
@@ -714,6 +715,10 @@ div.hideCategory {
   padding: 10px;
 }
 
+.contact form label {
+  color: #ed5565;
+}
+
 .contact form input {
   height: 40px;
 }
@@ -735,6 +740,10 @@ div.hideCategory {
 
 .contact form button:hover {
   background-color: #48cfad;
+}
+
+.form-group input {
+  width: 100% !important;
 }
 
 .form-control {
@@ -1062,6 +1071,9 @@ footer p {
   }
   .projects {
     height: auto !important;
+  }
+  .project-section-heading {
+    color: #48cfad;
   }
   .individual-project {
     -webkit-box-orient: vertical;

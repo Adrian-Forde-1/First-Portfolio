@@ -80,7 +80,7 @@
           <span class="m-left">r</span>
           <span class="m-left">.</span>
         </h1>
-        <p>MERN Stack</p>
+        <p>Full Stack Developer</p>
         <a href="#contact">contact me</a>
       </div>
       <div class="profile-img">
@@ -93,10 +93,12 @@
       <div class="about-me-info">
         <p>
           <span class="focused-word">I've</span> always been dabbling in code, getting to know a little of the languages that interest me like Java, C++ and Python<span class="focused-word">.</span></p>
-        <p>I even went in further by studying android development and graphics coding but the thing that <span class="focused-word">grapsed</span> my attention and aligned perfectly with my current development goals was <span class="focused-word">Web Development</span>.
+        <p>I even went in further by studying a bit of android development and open gl with C++ but the thing that <span class="focused-word">grapsed</span> my attention and aligned perfectly with my current development goals was <span class="focused-word">Web Development</span>.
         </p>
 
         <p>Ever since I found this <span class="focused-word">amazing</span> field, i've been striving to be the best developer I can be <span class="focused-word">.</span></p>
+
+        <p>I have strong JS fundamentals and experience in react and I'm willing to adapt to any JS framework<span class="focused-word">.</span></p>
         
       </div>
       <h1 class="me">Me</h1>
@@ -189,7 +191,7 @@
 
     <div class="section-container projects" id="projects">
       <h1>Projects</h1>
-      <h4>Full Stack</h4>
+      <h4 class="project-type-heading">Full Stack</h4>
       <div class="individual-project" data-aos="fade-in" data-aos-duration="500" data-aos-delay="">
         <div class="project-img-container">
           <img src="img/Cellphone Repair Website Picture.PNG" alt=""
@@ -200,7 +202,7 @@
             <button class="individual-project-btn" id="cellphone-repair-btn" onclick="openModal(this)">More Info</button>
           </div>
       </div>
-      <h4>Front End</h4>
+      <h4 class="project-type-heading">Front End</h4>
       <div class="individual-project" data-aos="fade-in" data-aos-duration="500" data-aos-delay="150">
         <div class="project-img-container">
           <img src="img/Clothing Website Picture.PNG" alt=""
@@ -242,13 +244,21 @@
       method="POST"
     >
       <div class="form-group">
-          <input type="text" name="name" placeholder="Name">
+          <label for="name">
+            Name
+          </label>
+            <input type="text" name="name" placeholder="Name">
+          
       </div>
       <div class="form-group">
-        <input type="text" name="_replyto" placeholder="Email">
+        <label for="_replyto">Email</label>
+        
+          <input type="text" name="_replyto" placeholder="Email">
      </div>
       <div class="form-group">
-          <textarea name="message" placeholder="Message"></textarea>
+            <label for="message">Message</label>
+           <textarea name="message" placeholder="Message"></textarea>
+            
       </div>
     
       <!-- your other form fields go here -->
