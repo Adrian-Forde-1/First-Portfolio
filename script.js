@@ -47,6 +47,15 @@ AOS.init();
 //   });
 // };
 
+const bugTrackerWebsiteInfo = {
+  name: 'Bug Tracker',
+  img: 'img/Bug Tracker Website Picture.PNG',
+  information:
+    "With the aim of improving my skills overall, both in frontend and backend, I followed the suggestion of a friend and dove right into this project. During the creation of this project I tried to implement the MVC design pattern and SRS ( Software Requirement Specifications ) to the best I currently could to aid in making this project's development cleaner and quicker than before. Using the knowledge I had before and the knowledge I gained during the creation of this project, I can say that my skills in both backend and frontend has grown.",
+  liveLink: 'https://af-bug-tracker.herokuapp.com/',
+  warning:
+    'This website is being hosted on heroku so it may take a few seconds to load up. Sorry in advance.',
+};
 const cellphoneRepairWebsiteInfo = {
   name: 'Cellphone Repair',
   img: 'img/Cellphone Repair Website Picture.PNG',
@@ -153,6 +162,21 @@ const openModal = (event) => {
 
     if (cellphoneRepairWebsiteInfo['warning'])
       modalWarning.innerHTML = cellphoneRepairWebsiteInfo.warning;
+    else modalWarning.style.display = 'none';
+  }
+
+  if (event.id === 'bug-tracker-btn') {
+    modalImg.src = bugTrackerWebsiteInfo.img;
+    modalName.innerHTML = bugTrackerWebsiteInfo.name;
+    modalInfo.innerHTML = bugTrackerWebsiteInfo.information;
+    modalLinkLive.href = bugTrackerWebsiteInfo.liveLink;
+
+    if (bugTrackerWebsiteInfo['githubLink'])
+      modalLinkGithub.href = bugTrackerWebsiteInfo.githubLink;
+    else modalLinkGithub.style.display = 'none';
+
+    if (bugTrackerWebsiteInfo['warning'])
+      modalWarning.innerHTML = bugTrackerWebsiteInfo.warning;
     else modalWarning.style.display = 'none';
   }
 

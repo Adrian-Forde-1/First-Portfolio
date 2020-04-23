@@ -867,6 +867,10 @@ footer p {
      object-fit: fit !important;
 }
 
+.modal-name {
+  text-align: center;
+}
+
 .modal-close {
   position: absolute;
   top: 10px;
