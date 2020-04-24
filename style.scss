@@ -457,7 +457,8 @@ div[class*='col'] {
   }
 
   i .fab,
-  .fa-js {
+  .fa-js,
+  .fa-bug {
     color: #f0db4f;
   }
 
@@ -472,12 +473,18 @@ div[class*='col'] {
   }
 
   i .fab,
+  .fa-css3-alt {
+    color: #264de4;
+  }
+
+  i .fab,
   .fa-git-alt {
     color: #f1502f;
   }
 
   i .fab,
-  .fa-html5 {
+  .fa-html5,
+  .fa-grin-squint {
     color: #f16529;
   }
 
@@ -535,6 +542,9 @@ div[class*='col'] {
   }
   &.sass {
     color: #c69;
+  }
+  &.css {
+    color: #264de4;
   }
   &.git {
     color: #f1502f;
@@ -1009,6 +1019,11 @@ footer {
     i .fab,
     .fa-sass {
       color: #c69;
+    }
+
+    i .fab,
+    .fa-css3-alt {
+      color: #264de4;
     }
 
     i .fab,

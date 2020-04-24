@@ -519,7 +519,8 @@ div[class*='col'] {
 }
 
 .skill-info i .fab,
-.skill-info .fa-js {
+.skill-info .fa-js,
+.skill-info .fa-bug {
   color: #f0db4f;
 }
 
@@ -534,12 +535,18 @@ div[class*='col'] {
 }
 
 .skill-info i .fab,
+.skill-info .fa-css3-alt {
+  color: #264de4;
+}
+
+.skill-info i .fab,
 .skill-info .fa-git-alt {
   color: #f1502f;
 }
 
 .skill-info i .fab,
-.skill-info .fa-html5 {
+.skill-info .fa-html5,
+.skill-info .fa-grin-squint {
   color: #f16529;
 }
 
@@ -598,6 +605,10 @@ div[class*='col'] {
 
 .skill-name.sass {
   color: #c69;
+}
+
+.skill-name.css {
+  color: #264de4;
 }
 
 .skill-name.git {
@@ -1111,6 +1122,10 @@ footer p {
   .skill-info i .fab,
   .skill-info .fa-sass {
     color: #c69;
+  }
+  .skill-info i .fab,
+  .skill-info .fa-css3-alt {
+    color: #264de4;
   }
   .skill-info i .fab,
   .skill-info .fa-git-alt {
