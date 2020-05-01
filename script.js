@@ -63,6 +63,7 @@ const cellphoneRepairWebsiteInfo = {
   information:
     'Into new but familiar territory is what I felt like when developing this website. Being the second full stack website I ever built, I was able to take my knowledge of front end and combine it with my backend skills that included Node Js, Express Js and MongoDB to create this amazing cellphone repair website, with both client and admin functionality. <br> Accounts are: <br> Client: maxjow@email.com password: maxjoe <br> Client: mikedowell@email.com password: dowell <br> Client: new@email.com password: qqqqqq <br> Admin: admin@email.com password: adminuser <br> Admin: moderator@email.com password: moderator',
   liveLink: 'https://afcellphonerepair.herokuapp.com/',
+  githubLink: 'https://github.com/DawnOfHopee/phone_repair_website',
   warning:
     'This website is being hosted on heroku so it may take a few seconds to load up. Sorry in advance.',
 };
