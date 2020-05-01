@@ -53,6 +53,7 @@ const bugTrackerWebsiteInfo = {
   information:
     "With the aim of improving my skills overall, both in frontend and backend, I followed the suggestion of a friend and dove right into this project. During the creation of this project I tried to implement the MVC design pattern and SRS ( Software Requirement Specifications ) to the best I currently could to aid in making this project's development cleaner and quicker than before. Using the knowledge I had before and the knowledge I gained during the creation of this project, I can say that my skills in both backend and frontend has grown.",
   liveLink: 'https://af-bug-tracker.herokuapp.com/',
+  githubLink: 'https://github.com/DawnOfHopee/bug_tracker_website',
   warning:
     'This website is being hosted on heroku so it may take a few seconds to load up. Sorry in advance.',
 };
